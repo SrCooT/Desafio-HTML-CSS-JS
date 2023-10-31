@@ -1,0 +1,15 @@
+@media(max-width: 375px){
+    .formulario .inputs{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0px;
+        background-color: red;
+        border: 1px solid #000;
+        border-radius: 5px;
+        outline: none;
+        transition: .3s;
+    }
+
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="stylesheet" href="./src/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Desafio DevEmDobro</title>
+  </head>
+  <body>
+    <main>
+      <section class="frase">
+        <div>
+          <h2 class="titulo">FICOU COM DÚVIDA?</h2>
+          <h2 class="titulo">NOS MANDE UMA MENSAGEM !</h2>
+
+          <p class="contato">
+            caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem
+            e entraremos em contato em menos de 24h.
+          </p>
+        </div>
+      </section>
+      <section class="formulario">
+        <div>
+          <form id="form" method="get" action="Obrigado" autocomplete="off">
+            <div class="item">
+              <label for="name">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="inputs required" oninput= "nameValidate()"
+                  placeholder="Nome completo*"
+                />
+              </label>
+
+              <span class="span-required">* Campo Obrigatorio</span>
+            </div>
+
+            <div class="item">
+              <label for="email">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="inputs required "oninput= emailValidate()
+                  placeholder="Email *"
+                />
+              </label>
+              <span class="span-required">* Campo Obrigatorio</span>
+            </div>
+
+            <div class="item">
+              <label for="telefone">
+                <input
+                  type="number"
+                  name="telefone"
+                  id="telefone"
+                  class="inputs required" oninput="numberValidate()"
+                  placeholder="Telefone *"
+                />
+                <span class="span-required">* Campo Obrigatorio</span>
+              </label>
+            </div>
+
+            <div class="item">
+              <label for="mensagem">
+                <textarea
+                  class="inputs required" oninput="menssageValidate()"
+                  name="mensagem"
+                  id="mensagem"
+                  cols="30"
+                  rows="10"
+                  placeholder="Mensagem *"
+                ></textarea>
+              </label>
+              <span class="span-required">* Campo Obrigatorio</span>
+            </div>
+            <p>*Campos obrigatórios</p>
+            <div>
+              <label for="submit"
+                ><input class="enviar" type="submit"  value="Enviar"
+              /></label>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="./src/js/form.js"></script>
+  </body>
+</html>

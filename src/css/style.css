@@ -1,0 +1,88 @@
+main{
+    background-image: url(../img/bg-repeat.jpg);
+    background-repeat: repeat-x;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.frase{
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    padding-right: 73px;
+    
+}
+
+.frase .titulo{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.frase .contato{
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+.formulario {
+    background-color: #FFF;
+    display: flex;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;    
+    border-radius: 5px;
+    box-shadow: 8px 9px 0px 0px #00000026;
+}
+
+
+
+.formulario .inputs{
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    padding: 15px;
+    margin: 5px 0px;
+    background-color: #FFF;
+    border: 1px solid #000;
+    border-radius: 5px;
+    outline: none;
+    transition: .3s;
+}
+
+.span-required{
+    display: none;
+    color:red;
+}
+
+.formulario p{
+    font-weight: 400;
+    font-size: 15px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.formulario #mensagem{
+    width: 375px;
+    background-color: #FFF;
+    border-radius: 5px;
+}
+
+.formulario .enviar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    padding:  12px;
+    font-weight: 700;
+    font-size: 15px;
+    background-color:#3CCC87;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    
+}
