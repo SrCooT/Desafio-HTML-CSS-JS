@@ -70,6 +70,7 @@ main{
     width: 375px;
     background-color: #FFF;
     border-radius: 5px;
+    resize: none;
 }
 
 .formulario .enviar{
